@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/JavaScript" src="displayEvens.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <h1>Sample</h1>
+    <form name="formEvens" onsubmit="return validateItems();" 
+          onreset="resetForm();" class="form-inline">
+            <div class="form-group">
+                <label for="start_num">Starting Number</label>
+                <input type="number" class="form-control" id="start_num">
+            </div>
+            <br/>
+            <div class="form-group">
+                <label for="end_num">Ending Number</label>
+                <input type="number" class="form-control" id="end_num">
+            </div>
+            <br/>
+            <div class="form-group">
+                <label for="step_num">Step</label>
+                <input type="number" class="form-control" id="step_num">
+            </div>             
+            <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
+            <button type="reset" id="resetButton" class="btn">Reset</button>
+    </form>
+    <div class="result">
+        <p id="resultText" style="display:none"></p>
+        <p id="resultNums" style="display:none"></p>       
+    </div>
+</div>
+</body>
+</html>
